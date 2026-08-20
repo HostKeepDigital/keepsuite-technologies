@@ -4,6 +4,12 @@ import {
   ICO_NUMBER,
 } from "@/config/site";
 
+// Unified card style for both Part One and Part Two.
+// Flex (not grid) so an incomplete final row centres instead of leaving a
+// right-hand gap: 1 / 2 / 3 columns at mobile / tablet / desktop.
+const CARD =
+  "w-full md:w-[calc(50%_-_0.75rem)] lg:w-[calc(33.333%_-_1rem)] border border-slate-200 bg-white p-6";
+
 export default function Standards() {
   return (
     <>
@@ -19,14 +25,14 @@ export default function Standards() {
 
       {/* How we help you evidence compliance */}
       <section className="bg-background">
-        <div className="container-keep py-20 md:py-28">
+        <div className="container-keep py-24 md:py-32">
           <Reveal>
             <p className="font-mono-label text-slate-500">Part one</p>
             <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">
               How we help you evidence compliance
             </h2>
           </Reveal>
-          <div className="mt-10 grid gap-8 md:grid-cols-2">
+          <div className="mt-12 flex flex-wrap justify-center gap-6">
             {[
               ["Structured records against every operative.", "Each person carries their own document set, dated and traceable — not a shared folder of files."],
               ["Expiry dates monitored automatically.", "Not a column you remember to check. The system watches every date for you."],
@@ -34,9 +40,10 @@ export default function Standards() {
               ["Dated, exportable reports.", "Proof takes minutes, not days. Generate a compliance report on demand, with dates attached."],
               ["A complete history, not a snapshot.", "What was valid last quarter is still on record. The audit trail doesn't reset."],
             ].map(([t, d]) => (
-              <Reveal key={t} className="border-t border-slate-300 pt-5">
+              <Reveal key={t} className={CARD}>
+                <span className="mb-4 block h-1 w-8 bg-[#0052FF]" aria-hidden="true" />
                 <h3 className="text-lg font-semibold text-slate-900">{t}</h3>
-                <p className="mt-2 text-sm text-slate-600 leading-relaxed">{d}</p>
+                <p className="mt-2 text-sm text-neutral-700 leading-relaxed">{d}</p>
               </Reveal>
             ))}
           </div>
@@ -44,15 +51,15 @@ export default function Standards() {
       </section>
 
       {/* How we hold ourselves */}
-      <section className="bg-slate-50 border-y border-slate-200">
-        <div className="container-keep py-20 md:py-28">
+      <section className="bg-slate-100 border-y border-slate-200">
+        <div className="container-keep py-24 md:py-32">
           <Reveal>
             <p className="font-mono-label text-slate-500">Part two</p>
             <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">
               How we hold ourselves
             </h2>
           </Reveal>
-          <div className="mt-10 grid gap-8 md:grid-cols-2">
+          <div className="mt-12 flex flex-wrap justify-center gap-6">
             {[
               [`Registered in England and Wales, company number ${COMPANY_NUMBER}.`, "A real, verifiable legal entity — not a shell."],
               [`Registered with the Information Commissioner's Office, registration ${ICO_NUMBER}.`, "Our data protection registration is on the public record."],
@@ -61,20 +68,21 @@ export default function Standards() {
               ["Payments handled by Stripe.", "Card details never touch Keepsuite systems."],
               ["Every release is tested against a documented test pack.", "A traceable record runs from code change to evidence to sign-off — before anything goes out."],
             ].map(([t, d]) => (
-              <Reveal key={t} className="border-l-2 border-slate-300 pl-5">
+              <Reveal key={t} className={CARD}>
+                <span className="mb-4 block h-1 w-8 bg-[#0052FF]" aria-hidden="true" />
                 <h3 className="text-lg font-semibold text-slate-900">{t}</h3>
-                <p className="mt-2 text-sm text-slate-600 leading-relaxed">{d}</p>
+                <p className="mt-2 text-sm text-neutral-700 leading-relaxed">{d}</p>
               </Reveal>
             ))}
           </div>
 
           {/* Honesty callout */}
-          <Reveal className="mt-14 border-2 border-[#0052FF] bg-white p-8 md:p-10">
+          <Reveal className="mt-16 border-2 border-[#0052FF] bg-blue-50 p-8 md:p-12">
             <p className="font-mono-label text-[#0052FF]">The honesty section</p>
             <h3 className="mt-4 text-2xl font-bold text-slate-900 md:text-3xl">
               Our software is a tool, not a guarantee.
             </h3>
-            <div className="mt-5 prose-keep space-y-4 text-slate-700 leading-relaxed">
+            <div className="mt-5 max-w-2xl space-y-4 text-neutral-700 leading-relaxed">
               <p>
                 Keepsuite products help firms keep accurate records and act on them in time. They do not and cannot make a firm compliant, and they don't replace the firm's own legal duties or professional judgement.
               </p>
