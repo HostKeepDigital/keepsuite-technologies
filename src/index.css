@@ -63,7 +63,7 @@
     @apply font-mono text-xs uppercase tracking-[0.18em];
   }
   .container-keep {
-    @apply mx-auto w-full max-w-[1100px] px-6 md:px-10;
+    @apply mx-auto w-full max-w-[1280px] px-6 md:px-10;
   }
   .prose-keep {
     @apply mx-auto w-full max-w-[700px];

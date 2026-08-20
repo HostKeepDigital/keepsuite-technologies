@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <a
             href="#products"
-            className="mt-10 inline-flex items-center bg-[#0052FF] px-6 py-3 text-sm font-semibold text-white hover:bg-[#0040CC] transition-colors"
+            className="mt-10 inline-flex items-center bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white hover:bg-[#6D28D9] transition-colors"
           >
             See the Keep suite ↓
           </a>

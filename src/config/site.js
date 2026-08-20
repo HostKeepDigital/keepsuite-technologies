@@ -28,7 +28,7 @@ export const PRODUCTS = [
   {
     name: "DoorKeep",
     trade: "UK security contractors",
-    tagline: "Total oversight of the three-year SIA licence cycle.",
+    tagline: "Total oversight of SIA licences across your workforce.",
     description:
       "SIA licence and qualification tracking for door supervisors and security officers, built around the three-year licence cycle and the legal duty not to deploy an unlicensed operative.",
     status: "in_development",
@@ -43,7 +43,7 @@ export const PRODUCTS = [
       "CSCS cards, NVQ certificates, asbestos awareness refreshers and harness inspection records, tracked against every operative.",
     status: "planned",
     url: "",
-    accent: "#EF4444",
+    accent: "#C2703D",
   },
 ];
 

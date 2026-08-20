@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from "@/config/site";
+
 // Product card. Visual weight depends on status:
 //  - live: full card, accent bar, hover lift, primary CTA opening url in a new tab.
 //  - in_development / planned: muted "blueprint" styling, dashed border, status pill, no link.
@@ -46,7 +48,7 @@ export default function ProductCard({ product }) {
             href={product.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-[#0052FF] px-5 py-3 text-sm font-semibold text-white hover:bg-[#0040CC] transition-colors"
+            className="inline-flex items-center justify-center bg-[#7C3AED] px-5 py-3 text-sm font-semibold text-white hover:bg-[#6D28D9] transition-colors"
           >
             Visit {product.name} →
           </a>
@@ -56,6 +58,18 @@ export default function ProductCard({ product }) {
           </span>
         )}
       </div>
+
+      {!isLive && (
+        <p className="mt-4 text-sm text-slate-500">
+          Want to know when{" "}
+          <a
+            href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`${product.name} launch notification`)}`}
+            className="underline hover:text-slate-700"
+          >
+            {product.name} launches?
+          </a>
+        </p>
+      )}
     </article>
   );
 }
