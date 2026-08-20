@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Reveal from "@/components/Reveal";
 import ProductCard from "@/components/ProductCard";
-import { visibleProducts, FOUNDER_NAME } from "@/config/site";
+import { visibleProducts, FOUNDER_NAME, COMPANY_NAME } from "@/config/site";
 
 export default function Home() {
   const products = visibleProducts();
@@ -11,7 +11,7 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-[#0B0F13] text-white">
         <div className="container-keep py-24 md:py-36">
-          <p className="font-mono-label text-white/50">Keepsuite Technologies Ltd</p>
+          <p className="font-mono-label text-white/50">{COMPANY_NAME}</p>
           <h1 className="mt-6 max-w-4xl text-4xl font-extrabold leading-[1.05] sm:text-5xl md:text-6xl">
             Compliance software for trades that can't afford to guess.
           </h1>
