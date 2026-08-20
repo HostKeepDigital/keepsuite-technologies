@@ -27,7 +27,7 @@ export default function Contact() {
               </p>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="mt-6 inline-flex items-center bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white hover:bg-[#6D28D9] transition-colors"
+                className="mt-6 inline-flex items-center bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-deep transition-colors"
               >
                 {CONTACT_EMAIL}
               </a>
@@ -43,7 +43,7 @@ export default function Contact() {
                         href={scaffkeep.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-semibold text-[#0052FF] hover:underline"
+                        className="font-semibold text-accent hover:underline"
                       >
                         {scaffkeep.url.replace(/^https?:\/\//, "")}
                       </a>

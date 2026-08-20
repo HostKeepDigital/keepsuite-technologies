@@ -41,7 +41,7 @@ export default function Standards() {
               ["A complete history, not a snapshot.", "What was valid last quarter is still on record. The audit trail doesn't reset."],
             ].map(([t, d]) => (
               <Reveal key={t} className={CARD}>
-                <span className="mb-4 block h-1 w-8 bg-[#0052FF]" aria-hidden="true" />
+                <span className="mb-4 block h-1 w-8 bg-accent" aria-hidden="true" />
                 <h3 className="text-lg font-semibold text-slate-900">{t}</h3>
                 <p className="mt-2 text-sm text-neutral-700 leading-relaxed">{d}</p>
               </Reveal>
@@ -88,7 +88,7 @@ export default function Standards() {
               ["Every release is tested against a documented test pack.", "A traceable record runs from code change to evidence to sign-off — before anything goes out."],
             ].map(([t, d]) => (
               <Reveal key={t} className={CARD}>
-                <span className="mb-4 block h-1 w-8 bg-[#0052FF]" aria-hidden="true" />
+                <span className="mb-4 block h-1 w-8 bg-accent" aria-hidden="true" />
                 <h3 className="text-lg font-semibold text-slate-900">{t}</h3>
                 <p className="mt-2 text-sm text-neutral-700 leading-relaxed">{d}</p>
               </Reveal>

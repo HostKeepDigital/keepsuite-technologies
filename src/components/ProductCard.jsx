@@ -48,7 +48,7 @@ export default function ProductCard({ product }) {
             href={product.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-[#7C3AED] px-5 py-3 text-sm font-semibold text-white hover:bg-[#6D28D9] transition-colors"
+            className="inline-flex items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-white hover:bg-accent-deep transition-colors"
           >
             Visit {product.name} →
           </a>

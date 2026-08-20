@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <a
             href="#products"
-            className="mt-10 inline-flex items-center bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white hover:bg-[#6D28D9] transition-colors"
+            className="mt-10 inline-flex items-center bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-deep transition-colors"
           >
             See the Keep suite ↓
           </a>
@@ -52,7 +52,7 @@ export default function Home() {
               },
             ].map((b) => (
               <Reveal key={b.n} className="border-t border-slate-300 pt-6">
-                <span className="font-mono-label text-[#0052FF]">{b.n}</span>
+                <span className="font-mono-label text-accent">{b.n}</span>
                 <h3 className="mt-3 text-xl font-bold text-slate-900">{b.t}</h3>
                 <p className="mt-3 text-sm text-slate-600 leading-relaxed">{b.d}</p>
               </Reveal>
@@ -98,7 +98,7 @@ export default function Home() {
                 <p>
                   That's why each product feels purpose-built rather than generic, and why a firm working across two trades will eventually be able to run both from one account.
                 </p>
-                <div className="border-l-2 border-[#0052FF] pl-4">
+                <div className="border-l-2 border-accent pl-4">
                   <p className="font-mono-label text-slate-500">On the roadmap</p>
                   <p className="mt-2 text-sm text-slate-600">
                     Combined multi-trade accounts are on the roadmap, not available today.

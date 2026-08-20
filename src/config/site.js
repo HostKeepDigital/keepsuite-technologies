@@ -33,7 +33,7 @@ export const PRODUCTS = [
       "SIA licence and qualification tracking for door supervisors and security officers, built around the three-year licence cycle and the legal duty not to deploy an unlicensed operative.",
     status: "in_development",
     url: "",
-    accent: "#1E3A8A",
+    accent: "#5B21B6",
   },
   {
     name: "ArbKeep",
