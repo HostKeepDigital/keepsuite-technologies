@@ -29,7 +29,7 @@ export default function Products() {
 
           {/* How the suite works */}
           <Reveal className="mt-20 border-t border-slate-200 pt-12">
-            <p className="font-mono-label text-slate-500">How the suite works</p>
+            <p className="font-mono-label text-body">How the suite works</p>
             <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">
               Shared engine, trade-specific configuration, separate products.
             </h2>
@@ -42,14 +42,14 @@ export default function Products() {
             ].map(([t, d]) => (
               <Reveal key={t} className="border-t border-slate-300 pt-5">
                 <h3 className="text-lg font-semibold text-slate-900">{t}</h3>
-                <p className="mt-2 text-sm text-slate-600 leading-relaxed">{d}</p>
+                <p className="mt-2 text-sm text-body leading-relaxed">{d}</p>
               </Reveal>
             ))}
           </div>
 
           <Reveal className="mt-10 border-l-2 border-accent pl-4">
-            <p className="font-mono-label text-slate-500">On the roadmap</p>
-            <p className="mt-2 text-sm text-slate-600">
+            <p className="font-mono-label text-body">On the roadmap</p>
+            <p className="mt-2 text-sm text-body">
               Combined multi-trade accounts are on the roadmap, not available today.
             </p>
           </Reveal>

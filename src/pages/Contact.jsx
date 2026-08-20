@@ -18,11 +18,11 @@ export default function Contact() {
         <div className="container-keep py-20 md:py-28">
           <div className="grid gap-12 md:grid-cols-2 md:items-start">
             <Reveal>
-              <p className="font-mono-label text-slate-500">Email</p>
+              <p className="font-mono-label text-body">Email</p>
               <h2 className="mt-4 text-2xl font-bold text-slate-900">
                 Keepsuite is a UK company, and support is handled by email.
               </h2>
-              <p className="mt-4 text-slate-600 leading-relaxed">
+              <p className="mt-4 text-body leading-relaxed">
                 For anything about the company itself — the suite, partnerships, or a question that isn't tied to a specific product — write to us directly.
               </p>
               <a
@@ -33,8 +33,8 @@ export default function Contact() {
               </a>
 
               <div className="mt-10 border-t border-slate-200 pt-6">
-                <p className="font-mono-label text-slate-500">Product-specific support</p>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                <p className="font-mono-label text-body">Product-specific support</p>
+                <p className="mt-3 text-sm text-body leading-relaxed">
                   Product-specific support is handled through the product itself.
                   {scaffkeep?.url && (
                     <>

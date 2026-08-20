@@ -31,7 +31,7 @@ export default function Home() {
       <section className="bg-background">
         <div className="container-keep py-20 md:py-28">
           <Reveal>
-            <p className="font-mono-label text-slate-500">The problem</p>
+            <p className="font-mono-label text-body">The problem</p>
           </Reveal>
           <div className="mt-10 grid gap-10 md:grid-cols-3">
             {[
@@ -54,7 +54,7 @@ export default function Home() {
               <Reveal key={b.n} className="border-t border-slate-300 pt-6">
                 <span className="font-mono-label text-accent">{b.n}</span>
                 <h3 className="mt-3 text-xl font-bold text-slate-900">{b.t}</h3>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed">{b.d}</p>
+                <p className="mt-3 text-sm text-body leading-relaxed">{b.d}</p>
               </Reveal>
             ))}
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
       <section id="products" className="bg-slate-50 border-y border-slate-200 scroll-mt-16">
         <div className="container-keep py-20 md:py-28">
           <Reveal>
-            <p className="font-mono-label text-slate-500">The Keep suite</p>
+            <p className="font-mono-label text-body">The Keep suite</p>
             <h2 className="mt-4 max-w-2xl text-3xl font-bold text-slate-900 md:text-4xl">
               One product per trade. Each one a Keep.
             </h2>
@@ -85,13 +85,13 @@ export default function Home() {
         <div className="container-keep py-20 md:py-28">
           <div className="grid gap-12 md:grid-cols-2 md:items-start">
             <Reveal>
-              <p className="font-mono-label text-slate-500">One suite, one engine</p>
+              <p className="font-mono-label text-body">One suite, one engine</p>
               <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">
                 Every Keepsuite product is a "Keep."
               </h2>
             </Reveal>
             <Reveal>
-              <div className="prose-keep space-y-5 text-slate-600">
+              <div className="prose-keep space-y-5 text-body">
                 <p>
                   They share one engine — the same document tracking, the same expiry logic, the same audit reporting — configured for the credentials that specific trade actually carries.
                 </p>
@@ -99,8 +99,8 @@ export default function Home() {
                   That's why each product feels purpose-built rather than generic, and why a firm working across two trades will eventually be able to run both from one account.
                 </p>
                 <div className="border-l-2 border-accent pl-4">
-                  <p className="font-mono-label text-slate-500">On the roadmap</p>
-                  <p className="mt-2 text-sm text-slate-600">
+                  <p className="font-mono-label text-body">On the roadmap</p>
+                  <p className="mt-2 text-sm text-body">
                     Combined multi-trade accounts are on the roadmap, not available today.
                   </p>
                 </div>

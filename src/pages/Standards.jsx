@@ -27,7 +27,7 @@ export default function Standards() {
       <section className="bg-background">
         <div className="container-keep py-24 md:py-32">
           <Reveal>
-            <p className="font-mono-label text-slate-500">Part one</p>
+            <p className="font-mono-label text-body">Part one</p>
             <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">
               How we help you evidence compliance
             </h2>
@@ -43,7 +43,7 @@ export default function Standards() {
               <Reveal key={t} className={CARD}>
                 <span className="mb-4 block h-1 w-8 bg-accent" aria-hidden="true" />
                 <h3 className="text-lg font-semibold text-slate-900">{t}</h3>
-                <p className="mt-2 text-sm text-neutral-700 leading-relaxed">{d}</p>
+                <p className="mt-2 text-sm text-body leading-relaxed">{d}</p>
               </Reveal>
             ))}
           </div>
@@ -73,7 +73,7 @@ export default function Standards() {
       <section className="bg-slate-100 border-y border-slate-200">
         <div className="container-keep py-24 md:py-32">
           <Reveal>
-            <p className="font-mono-label text-slate-500">Part two</p>
+            <p className="font-mono-label text-body">Part two</p>
             <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">
               How we hold ourselves
             </h2>
@@ -90,7 +90,7 @@ export default function Standards() {
               <Reveal key={t} className={CARD}>
                 <span className="mb-4 block h-1 w-8 bg-accent" aria-hidden="true" />
                 <h3 className="text-lg font-semibold text-slate-900">{t}</h3>
-                <p className="mt-2 text-sm text-neutral-700 leading-relaxed">{d}</p>
+                <p className="mt-2 text-sm text-body leading-relaxed">{d}</p>
               </Reveal>
             ))}
           </div>

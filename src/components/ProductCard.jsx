@@ -28,17 +28,17 @@ export default function ProductCard({ product }) {
         aria-hidden="true"
       />
 
-      <span className="font-mono-label text-slate-500">{product.trade}</span>
+      <span className="font-mono-label text-body">{product.trade}</span>
 
-      <h3 className={`mt-3 text-2xl font-bold ${isLive ? "text-slate-900" : "text-slate-500"}`}>
+      <h3 className={`mt-3 text-2xl font-bold ${isLive ? "text-slate-900" : "text-body"}`}>
         {product.name}
       </h3>
 
-      <p className={`mt-2 text-sm font-medium ${isLive ? "text-slate-700" : "text-slate-500"}`}>
+      <p className={`mt-2 text-sm font-medium text-body`}>
         {product.tagline}
       </p>
 
-      <p className={`mt-4 text-sm leading-relaxed flex-1 ${isLive ? "text-slate-600" : "text-slate-500"}`}>
+      <p className={`mt-4 text-sm leading-relaxed flex-1 text-body`}>
         {product.description}
       </p>
 
@@ -53,14 +53,14 @@ export default function ProductCard({ product }) {
             Visit {product.name} →
           </a>
         ) : (
-          <span className="inline-block px-3 py-1 font-mono-label bg-slate-100 text-slate-600">
+          <span className="inline-block px-3 py-1 font-mono-label bg-slate-100 text-body">
             {STATUS_LABEL[product.status]}
           </span>
         )}
       </div>
 
       {!isLive && (
-        <p className="mt-4 text-sm text-slate-500">
+        <p className="mt-4 text-sm text-body">
           Want to know when{" "}
           <a
             href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`${product.name} launch notification`)}`}
