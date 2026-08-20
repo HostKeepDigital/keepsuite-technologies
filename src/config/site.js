@@ -33,7 +33,17 @@ export const PRODUCTS = [
       "SIA licence and qualification tracking for door supervisors and security officers, built around the three-year licence cycle and the legal duty not to deploy an unlicensed operative.",
     status: "in_development",
     url: "",
-    accent: "#3B82F6",
+    accent: "#1E3A8A",
+  },
+  {
+    name: "ArbKeep",
+    trade: "UK tree surgeons and arboriculture",
+    tagline: "Every ticket, every climber, always in date.",
+    description:
+      "Tracks CS30, CS31, CS38 and CS39 chainsaw tickets, aerial rescue and first aid certificates, alongside insurance and RAMS. A lapsed ticket can void insurance and cost a utility or rail contract — ArbKeep flags it before it expires, not after.",
+    status: "planned",
+    url: "",
+    accent: "#15803D",
   },
   {
     name: "RoofKeep",
