@@ -99,7 +99,7 @@ export default function Home() {
                   That's why each product feels purpose-built rather than generic, and why a firm working across two trades will eventually be able to run both from one account.
                 </p>
                 <div className="border-l-2 border-[#0052FF] pl-4">
-                  <p className="font-mono-label text-slate-400">On the roadmap</p>
+                  <p className="font-mono-label text-slate-500">On the roadmap</p>
                   <p className="mt-2 text-sm text-slate-600">
                     Combined multi-trade accounts are on the roadmap, not available today.
                   </p>

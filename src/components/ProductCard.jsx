@@ -28,7 +28,7 @@ export default function ProductCard({ product }) {
 
       <span className="font-mono-label text-slate-500">{product.trade}</span>
 
-      <h3 className={`mt-3 text-2xl font-bold ${isLive ? "text-slate-900" : "text-slate-400"}`}>
+      <h3 className={`mt-3 text-2xl font-bold ${isLive ? "text-slate-900" : "text-slate-500"}`}>
         {product.name}
       </h3>
 
@@ -51,13 +51,7 @@ export default function ProductCard({ product }) {
             Visit {product.name} →
           </a>
         ) : (
-          <span
-            className={`inline-block px-3 py-1 font-mono-label ${
-              product.status === "in_development"
-                ? "bg-slate-100 text-slate-600"
-                : "bg-slate-100/60 text-slate-400"
-            }`}
-          >
+          <span className="inline-block px-3 py-1 font-mono-label bg-slate-100 text-slate-600">
             {STATUS_LABEL[product.status]}
           </span>
         )}

@@ -28,11 +28,16 @@ export default function SiteHeader() {
       }`}
     >
       <div className="container-keep flex h-16 items-center justify-between">
-        <Link to="/" className="font-heading text-lg font-bold tracking-tight text-white" onClick={() => setOpen(false)}>
+        <Link
+          to="/"
+          aria-label="Keepsuite — home"
+          className="font-heading text-lg font-bold tracking-tight text-white"
+          onClick={() => setOpen(false)}
+        >
           Keepsuite
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav aria-label="Main navigation" className="hidden md:flex items-center gap-8">
           {NAV.map((item) => (
             <NavLink
               key={item.to}
@@ -60,7 +65,7 @@ export default function SiteHeader() {
 
       {open && (
         <div className="md:hidden bg-[#0B0F13] border-t border-white/10">
-          <nav className="container-keep flex flex-col py-4">
+          <nav aria-label="Mobile navigation" className="container-keep flex flex-col py-4">
             {NAV.map((item) => (
               <NavLink
                 key={item.to}

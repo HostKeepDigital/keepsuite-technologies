@@ -11,7 +11,7 @@ export default function SiteFooter() {
   const products = visibleProducts();
 
   return (
-    <footer className="bg-[#0B0F13] text-white">
+    <footer aria-label="Site footer" className="bg-[#0B0F13] text-white">
       <div className="container-keep py-16">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {/* Wordmark + description */}
@@ -24,7 +24,7 @@ export default function SiteFooter() {
 
           {/* Product links */}
           <div>
-            <h2 className="font-mono-label text-white/40">Products</h2>
+            <h2 className="font-mono-label text-white/60">Products</h2>
             <ul className="mt-4 space-y-3">
               {products.map((p) =>
                 p.status === "live" && p.url ? (
@@ -39,7 +39,7 @@ export default function SiteFooter() {
                     </a>
                   </li>
                 ) : (
-                  <li key={p.name} className="text-sm text-white/35">
+                  <li key={p.name} className="text-sm text-white/50">
                     {p.name}
                   </li>
                 )
@@ -49,7 +49,7 @@ export default function SiteFooter() {
 
           {/* Company links */}
           <div>
-            <h2 className="font-mono-label text-white/40">Company</h2>
+            <h2 className="font-mono-label text-white/60">Company</h2>
             <ul className="mt-4 space-y-3">
               <li><Link to="/about" className="text-sm text-white/80 hover:text-white transition-colors">About</Link></li>
               <li><Link to="/standards" className="text-sm text-white/80 hover:text-white transition-colors">Standards</Link></li>
@@ -60,7 +60,7 @@ export default function SiteFooter() {
 
           {/* Legal links */}
           <div>
-            <h2 className="font-mono-label text-white/40">Legal</h2>
+            <h2 className="font-mono-label text-white/60">Legal</h2>
             <ul className="mt-4 space-y-3">
               <li><Link to="/privacy" className="text-sm text-white/80 hover:text-white transition-colors">Privacy notice</Link></li>
               <li><Link to="/terms" className="text-sm text-white/80 hover:text-white transition-colors">Website terms</Link></li>
@@ -72,7 +72,7 @@ export default function SiteFooter() {
           <p className="text-xs text-white/50 leading-relaxed">
             {COMPANY_NAME} is a company registered in England and Wales. Company number {COMPANY_NUMBER}. Registered office: {REGISTERED_OFFICE}. ICO registration: {ICO_NUMBER}.
           </p>
-          <p className="mt-4 text-xs text-white/40">
+          <p className="mt-4 text-xs text-white/60">
             © {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved.
           </p>
         </div>

@@ -32,7 +32,7 @@ export default function About() {
           </div>
 
           <Reveal className="mt-16 border-l-2 border-[#0052FF] pl-6">
-            <p className="font-mono-label text-slate-400">In short</p>
+            <p className="font-mono-label text-slate-500">In short</p>
             <p className="mt-3 max-w-2xl text-xl font-semibold text-slate-900">
               No invented team, no offices, no funding claims, no "trusted by" figures. Just focused tools, built carefully, shipped one at a time.
             </p>

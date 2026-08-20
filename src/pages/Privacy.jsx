@@ -23,7 +23,7 @@ export default function Privacy() {
                   This privacy notice describes how {COMPANY_NAME} collects, uses and protects personal data in connection with this website and our products.
                 </p>
                 <div className="border-l-2 border-[#0052FF] pl-4">
-                  <p className="font-mono-label text-slate-400">Status</p>
+                  <p className="font-mono-label text-slate-500">Status</p>
                   <p className="mt-2 text-slate-900 font-semibold">
                     This notice is being finalised ahead of launch.
                   </p>
