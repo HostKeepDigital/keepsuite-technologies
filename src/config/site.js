@@ -10,7 +10,7 @@ export const FOUNDER_NAME = "Tyler Dee Clarke";
 export const FOUNDER_TITLE = "Founder & Director";
 
 // When false, only live products render anywhere on the site.
-export const SHOW_UNRELEASED = false;
+export const SHOW_UNRELEASED = true;
 
 // The product registry. Adding a future product is a one-object edit.
 // status: "live" | "in_development" | "planned"
