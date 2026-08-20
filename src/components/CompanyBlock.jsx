@@ -6,25 +6,25 @@ export default function CompanyBlock() {
   return (
     <div className="border border-slate-200 bg-white p-6">
       <h2 className="font-mono-label text-slate-500">Registered company</h2>
-      <dl className="mt-4 space-y-3 text-sm">
-        <div className="flex gap-3">
-          <dt className="w-40 shrink-0 text-slate-500">Legal name</dt>
+      <dl className="mt-4 space-y-4 text-sm">
+        <div className="flex flex-col gap-0.5 md:flex-row md:gap-3">
+          <dt className="md:w-40 md:shrink-0 text-slate-500">Legal name</dt>
           <dd className="text-slate-900 font-medium">{COMPANY_NAME}</dd>
         </div>
-        <div className="flex gap-3">
-          <dt className="w-40 shrink-0 text-slate-500">Company number</dt>
+        <div className="flex flex-col gap-0.5 md:flex-row md:gap-3">
+          <dt className="md:w-40 md:shrink-0 text-slate-500">Company number</dt>
           <dd className="text-slate-900">{COMPANY_NUMBER}</dd>
         </div>
-        <div className="flex gap-3">
-          <dt className="w-40 shrink-0 text-slate-500">ICO registration</dt>
+        <div className="flex flex-col gap-0.5 md:flex-row md:gap-3">
+          <dt className="md:w-40 md:shrink-0 text-slate-500">ICO registration</dt>
           <dd className="text-slate-900">{ICO_NUMBER}</dd>
         </div>
-        <div className="flex gap-3">
-          <dt className="w-40 shrink-0 text-slate-500">Registered office</dt>
+        <div className="flex flex-col gap-0.5 md:flex-row md:gap-3">
+          <dt className="md:w-40 md:shrink-0 text-slate-500">Registered office</dt>
           <dd className="text-slate-900">{REGISTERED_OFFICE}</dd>
         </div>
-        <div className="flex gap-3">
-          <dt className="w-40 shrink-0 text-slate-500">Jurisdiction</dt>
+        <div className="flex flex-col gap-0.5 md:flex-row md:gap-3">
+          <dt className="md:w-40 md:shrink-0 text-slate-500">Jurisdiction</dt>
           <dd className="text-slate-900">England and Wales</dd>
         </div>
       </dl>
