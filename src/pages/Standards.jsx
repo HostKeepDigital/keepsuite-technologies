@@ -50,6 +50,25 @@ export default function Standards() {
         </div>
       </section>
 
+      {/* Responsibility statement — sits between Part One and Part Two */}
+      <section className="bg-[#0B0F13] text-white">
+        <div className="container-keep py-20 md:py-28">
+          <Reveal>
+            <h2 className="max-w-3xl text-3xl font-bold md:text-4xl">
+              Where the responsibility sits
+            </h2>
+            <div className="mt-6 max-w-prose space-y-4 text-white/80 leading-relaxed">
+              <p>
+                The legal duty is yours. It stays yours. No software changes that, and you should be wary of anything that suggests otherwise.
+              </p>
+              <p>
+                What we do is make it very hard for that duty to catch you out. Every document accounted for, every expiry watched, every gap visible before it becomes a problem, and proof ready the moment someone asks. The judgement is still yours to make — we make sure you're making it with the full picture in front of you.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* How we hold ourselves */}
       <section className="bg-slate-100 border-y border-slate-200">
         <div className="container-keep py-24 md:py-32">
@@ -76,21 +95,6 @@ export default function Standards() {
             ))}
           </div>
 
-          {/* Honesty callout */}
-          <Reveal className="mt-16 border-2 border-[#0052FF] bg-blue-50 p-8 md:p-12">
-            <p className="font-mono-label text-[#0052FF]">The honesty section</p>
-            <h3 className="mt-4 text-2xl font-bold text-slate-900 md:text-3xl">
-              Our software is a tool, not a guarantee.
-            </h3>
-            <div className="mt-5 max-w-2xl space-y-4 text-neutral-700 leading-relaxed">
-              <p>
-                Keepsuite products help firms keep accurate records and act on them in time. They do not and cannot make a firm compliant, and they don't replace the firm's own legal duties or professional judgement.
-              </p>
-              <p className="font-semibold text-slate-900">
-                Any vendor claiming otherwise is selling something it can't deliver.
-              </p>
-            </div>
-          </Reveal>
         </div>
       </section>
     </>
