@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { COMPANY_NAME } from "@/config/site";
@@ -11,22 +11,10 @@ const NAV = [
 ];
 
 export default function SiteHeader() {
-  const [solid, setSolid] = useState(false);
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setSolid(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header
-      className={`sticky top-0 z-50 transition-colors duration-300 ${
-        solid ? "bg-[#0B0F13] border-b border-white/10" : "bg-[#0B0F13]/0 border-b border-transparent"
-      }`}
-    >
+    <header className="sticky top-0 z-50 bg-[#0B0F13] border-b border-white/10">
       <div className="container-keep flex h-16 items-center justify-between">
         <Link
           to="/"
