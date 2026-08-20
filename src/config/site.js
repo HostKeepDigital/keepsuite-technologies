@@ -4,7 +4,7 @@
 export const COMPANY_NAME = "Keepsuite Technologies Ltd";
 export const COMPANY_NUMBER = "17084415";
 export const ICO_NUMBER = "ZC113158";
-export const REGISTERED_OFFICE = "[REGISTERED OFFICE ADDRESS]";
+export const REGISTERED_OFFICE = "37 Battersby Street, Ince Wigan, WN2 2LZ";
 export const CONTACT_EMAIL = "[CONTACT EMAIL]";
 export const FOUNDER_NAME = "Tyler Dee Clarke";
 export const FOUNDER_TITLE = "Founder & Director";
