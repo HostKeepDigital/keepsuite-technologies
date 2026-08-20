@@ -8,6 +8,7 @@ export const REGISTERED_OFFICE = "37 Battersby Street, Ince Wigan, WN2 2LZ";
 export const CONTACT_EMAIL = "[CONTACT EMAIL]";
 export const FOUNDER_NAME = "Tyler Dee Clarke";
 export const FOUNDER_TITLE = "Founder & Director";
+export const LEGAL_LAST_UPDATED = "20 August 2026";
 
 // When false, only live products render anywhere on the site.
 export const SHOW_UNRELEASED = true;
